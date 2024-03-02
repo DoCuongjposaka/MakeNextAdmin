@@ -23,6 +23,7 @@ const UsersPage = () => {
               <td>Created At</td>
               <td>Role</td>
               <td>Status</td>
+              <td>Action</td>
             </tr>
           </thead>
           <tbody>
@@ -45,7 +46,38 @@ const UsersPage = () => {
               <td>active</td>
               <td>
                 <div className={styles.buttons}>
-                <Link href="/">
+                <Link href="/dashboard/users/test2">
+                  <button className={`${styles.button} ${styles.view}`}>
+                    View
+                  </button>
+                </Link>
+                <button className={`${styles.button} ${styles.delete}`}>
+                    Delete
+                  </button>
+                </div>
+                
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div className={styles.user}>
+                  <Image 
+                    src="/noavatar.png" 
+                    alt="" 
+                    width={40} 
+                    height={40} 
+                    className={styles.userImage}
+                  />
+                  Mazin2
+                </div>
+              </td>
+              <td>Mazin@gmail.com</td>
+              <td>26.05.2022</td>
+              <td>User</td>
+              <td>active</td>
+              <td>
+                <div className={styles.buttons}>
+                <Link href="/dashboard/users/test22">
                   <button className={`${styles.button} ${styles.view}`}>
                     View
                   </button>
